@@ -8,7 +8,9 @@ function numberPressed(number) {
 
 function operatorPressed(operator) {
   if(currentOperation == "") currentOperation = answer;
-  if(currentOperation[0] == '*' || currentOperation[0] == '/' || eval(currentOperation) == "Infinity") document.getElementById('display').value = "E";
+  if(currentOperation[0] == '*' || currentOperation[0] == '/' || eval(currentOperation) == "Infinity") {
+    document.getElementById('display').value = "E";
+  }
   else if(operator === '=') {
     currentOperation = eval(currentOperation ? currentOperation:"0");
     document.getElementById('display').value = eval(currentOperation);
