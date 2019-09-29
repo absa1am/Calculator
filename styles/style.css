@@ -1,18 +1,50 @@
-body {
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  height: 80vh;
+  position: relative;
+  background-color: #001a25;
+}
+
+.content {
+  left: 20vw;
+  width: 60vw;
+  height: 80vh;
+  color: #416d85;
+  position: relative;
+  background: #F5F7FA;
+}
+
+.header {
+  height: 12vh;
+  padding-top: 10px;
+  background-color: #076f8a;
   text-align: center;
-  background-color: #2F2E2E;
+}
+
+.footer {
+  height: 8vh;
+  padding-top: 10px;
+  background-color: #076f8a;
+  text-align: center;
 }
 
 .calculator {
+  left: 37vw;
   width: 300px;
   height: 390px;
   margin-top: 50px;
   border-radius: 7px;
   display: inline-block;
+  position: relative;
   background-color: lightslategray;
 }
 
 .display {
+  left: 7px;
   width: 280px;
   height: 60px;
   padding-right: 5px;
@@ -22,15 +54,18 @@ body {
   text-align: right;
   border-style: none;
   border-radius: 5px;
+  position: relative;
   background-color: lightgray;
 }
 
 .keypad {
+  left: 10px;
   width: 280px;
   height: 265px;
   margin-top: 25px;
   padding-top: 10px;
   display: inline-block;
+  position: relative;
   background-color: gray;
 }
 
